@@ -1,0 +1,12 @@
+.CategoriesArea {
+  width: 100%;
+  height: 15%;
+  position: relative;
+
+  &__block {
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
