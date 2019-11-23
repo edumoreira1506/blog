@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, HashRouter } from 'react-router-dom'
+import PersonalArea from './PersonalArea'
+import Menu from './Menu'
 
 import './Template.scss'
 
@@ -7,12 +8,15 @@ const Template = ({
   children
 }) =>
   <div className="Template">
-    <HashRouter basename="/">
-      <Link to="/">Home</Link>
-      <Link to="/about">Sobre</Link>
-    </HashRouter>
-    
-    { children }
+    <div className="Template__personal">
+      <PersonalArea />
+    </div>
+    <div className="Template__content">
+      <div className="Template__menu">
+        <Menu />
+      </div>
+      { children }
+    </div>
   </div>
 
 export default Template
