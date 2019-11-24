@@ -7,3 +7,5 @@ export const getAll = () =>
     , []).flat()
     return [...tags, ...tagsPosts]
   }, [])
+
+export const getTag = () => window.location.hash.replace('#/tag/','')
