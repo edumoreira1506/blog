@@ -25,7 +25,7 @@ const Post = ({
               <HashRouter basename="/">
                 {
                   tags.map(tag =>
-                    <Link to={`tag/${tag}`}>
+                    <Link key={tag} to={`tag/${tag}`}>
                       { tag }
                     </Link>
                   )
