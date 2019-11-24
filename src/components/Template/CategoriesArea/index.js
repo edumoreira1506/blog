@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import SearchArea from './SearchArea'
 import PostsArea from './Posts'
+import TagsArea from './TagsArea'
 import * as Post from '../../../models/posts'
+import * as Tag from '../../../models/tags'
 import './CategoriesArea.scss'
 
 const CategoriesArea = () => {
@@ -19,7 +21,7 @@ const CategoriesArea = () => {
 
     setKeyWord(e.target.value)
   }
-  
+
   return (
     <div className="CategoriesArea">
       <div className="CategoriesArea__block">
@@ -27,6 +29,11 @@ const CategoriesArea = () => {
           onSubmit={onSubmit}
           value={keyWord}
           onChange={onChange}
+        />
+      </div>
+      <div className="CategoriesArea__tags">
+        <TagsArea
+          tags={Tag.getAll()}
         />
       </div>
       <div className="CategoriesArea__block">

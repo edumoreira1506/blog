@@ -25,4 +25,9 @@ export const getPost = () => {
   }
 }
 
+export const getByTag = tag =>
+  getAll().filter(post =>
+    post.tags.includes(tag)
+  )
+
 const getYears = posts => Object.keys(posts)
