@@ -34,6 +34,7 @@
     width: 30%;
     background: $grey;
     height: 100%;
+    position: fixed;
   }
 
   &__content {
@@ -42,6 +43,9 @@
     background: $white;
     vertical-align: top;
     height: 100%;
+    position: absolute;
+    right: 0;
+    overflow: auto;
   }
 
   &__menu {
