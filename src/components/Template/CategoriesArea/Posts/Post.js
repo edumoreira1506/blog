@@ -7,8 +7,8 @@ const Post = ({
   description,
   date
 }) =>
-  <HashRouter basename="/">
-    <Link to={`/post/${date}`}>
+  <HashRouter basename="/post">
+    <Link to={date}>
       <li className="Post">
         <h3 className="Post__title">
           { title }

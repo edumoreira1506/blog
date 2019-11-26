@@ -9,8 +9,8 @@ const Post = ({
   tags,
   content
 }) =>
-  <HashRouter basename="/">
-    <Link to={`post/${date}`}>
+  <HashRouter basename="/post">
+    <Link to={date}>
       <li className="BigPost">
         <h3 className="BigPost__title">
           { title }
@@ -22,10 +22,10 @@ const Post = ({
           { date }
           { 
             tags.length &&
-              <HashRouter basename="/">
+              <HashRouter basename="/tag">
                 {
                   tags.map(tag =>
-                    <Link key={tag} to={`tag/${tag}`}>
+                    <Link key={tag} to={tag}>
                       { tag }
                     </Link>
                   )
