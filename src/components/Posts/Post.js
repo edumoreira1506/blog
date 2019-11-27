@@ -1,13 +1,12 @@
 import React from 'react'
 import './Post.scss'
-import * as PostModel from '../../models/posts'
 import { HashRouter, Link } from 'react-router-dom'
 
 const Post = ({
   date,
   title,
   tags,
-  content
+  description
 }) =>
   <HashRouter basename="/post">
     <Link to={date}>
@@ -16,7 +15,7 @@ const Post = ({
           { title }
         </h3>
         <p className="BigPost__content">
-          { PostModel.getContent(content) }
+          { description }
         </p>
         <h5 className="BigPost__details">
           { date }

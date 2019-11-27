@@ -3,6 +3,7 @@ import * as PostModel from '../models/posts'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
 import { HashRouter, Link } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
 import './Post.scss'
 
 const Post = ({ match }) => {
@@ -30,11 +31,7 @@ const Post = ({ match }) => {
             </div> : null
         }
         <div className="Article__content">
-          {
-            post.content.map(paragraph =>
-              <p key={paragraph}> { paragraph } </p>
-            )
-          }
+          <ReactMarkdown source={post.content} />
         </div>
         <div className="Article__details">
           <HashRouter basename="/tag">
