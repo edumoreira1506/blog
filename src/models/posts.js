@@ -14,8 +14,6 @@ export const getAll = () =>
 export const search = keyWord =>
   getAll().filter(post => post.description.includes(keyWord) || post.title.includes(keyWord))
 
-export const getContent = content => `${content[0].substring(0, 300)}...`
-
 export const getPost = ({ params }) => ({
   ...posts[params.year][params.month][params.day],
   date: `${params.day}/${params.month}/${params.year}`

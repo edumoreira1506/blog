@@ -12,6 +12,7 @@ const Posts = ({ posts }) =>
           title={post.title}
           tags={post.tags}
           content={post.content}
+          description={post.description}
         />
       )
     }

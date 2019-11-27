@@ -7,4 +7,4 @@ import './index.scss'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-serviceWorker.unregister();
+if (process.env.NODE_ENV === 'production') serviceWorker.register();
