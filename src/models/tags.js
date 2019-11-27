@@ -8,4 +8,4 @@ export const getAll = () =>
     return [...tags, ...tagsPosts]
   }, [])
 
-export const getTag = () => window.location.hash.replace('#/tag/','')
+export const getTag = ({ params }) => params.tag

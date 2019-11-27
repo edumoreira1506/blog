@@ -5,9 +5,9 @@ import { Carousel } from 'react-responsive-carousel'
 import { HashRouter, Link } from 'react-router-dom'
 import './Post.scss'
 
-const Post = () => {
+const Post = ({ match }) => {
   try {
-    const post = PostModel.getPost()
+    const post = PostModel.getPost(match)
 
     return (
       <div className="Article">

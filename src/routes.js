@@ -9,8 +9,8 @@ const routes = () =>
   <HashRouter basename="/">
     <Route exact path='/about' component={About} />
     <Route exact path='/' component={Main} />
-    <Route path='/post' component={Post} />
-    <Route path='/tag' component={Tag} />
+    <Route path='/post/:day/:month/:year' component={Post} />
+    <Route path='/tag/:tag' component={Tag} />
   </HashRouter>
 
 export default routes
