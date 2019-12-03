@@ -9,14 +9,14 @@ const Post = ({
 }) =>
   <HashRouter basename="/post">
     <Link to={date}>
-      <li className="Post">
-        <h3 className="Post__title">
+      <li className="PostCategory">
+        <h3 className="PostCategory__title">
           { title }
         </h3>
-        <h4 className="Post__description">
+        <h4 className="PostCategory__description">
           { description }
         </h4>
-        <h5 className="Post__date">
+        <h5 className="PostCategory__date">
           { date }
         </h5>
       </li>

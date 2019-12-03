@@ -1,40 +1,40 @@
 import React, { useState } from 'react'
-import PerfilArea from './PerfilArea/index'
-import CategoriesArea from './CategoriesArea/index'
-import ButtonArea from './ButtonArea'
-import TitleSite from './TitleSite'
+import Perfil from '../Perfil'
+import CategoriesList from '../CategoriesList'
+import Button from '../Button'
+import TitleSite from '../TitleSite'
 import { FaUserAlt } from 'react-icons/fa'
 import { IoIosGlobe } from 'react-icons/io'
 
-import './PersonalArea.scss'
+import './SideBar.scss'
 
-const PersonalArea = () => {
+const SideBar = () => {
   const [openedArea, setOpenedArea] = useState(0)
 
   const areas = [
-    <PerfilArea />,
-    <CategoriesArea />
+    <Perfil />,
+    <CategoriesList />
   ]
 
   return (
-    <div className="PersonalArea">
-      <div className="PersonalArea__buttons">
-        <div className="PersonalArea__options">
-          <ButtonArea
+    <div className="SideBar">
+      <div className="SideBar__buttons">
+        <div className="SideBar__options">
+          <Button
             onClick={() => setOpenedArea(0)}
             choiced={openedArea === 0}
           >
             <FaUserAlt />
-          </ButtonArea>
-          <ButtonArea
+          </Button>
+          <Button
             onClick={() => setOpenedArea(1)}
             choiced={openedArea === 1}
           >
             <IoIosGlobe />
-          </ButtonArea>
+          </Button>
         </div>
       </div>
-      <div className="PersonalArea__title">
+      <div className="SideBar__title">
         <TitleSite />
       </div>
       { areas[openedArea] }
@@ -42,4 +42,4 @@ const PersonalArea = () => {
   )
 }
 
-export default PersonalArea
+export default SideBar

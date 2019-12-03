@@ -1,9 +1,9 @@
 import React from 'react'
 import Post from './Post'
-import './Posts.scss'
+import './PostList.scss'
 
-const Posts = ({ posts }) =>
-  <ul className="Posts">
+const PostList = ({ posts }) =>
+  <ul className="PostList">
     {
       posts.map(post =>
         <Post
@@ -18,4 +18,4 @@ const Posts = ({ posts }) =>
     }
   </ul>
 
-export default Posts
+export default PostList

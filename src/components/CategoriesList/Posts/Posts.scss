@@ -1,10 +1,16 @@
-@import "../variables.scss";
+@import "../../variables.scss";
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .Posts {
+  overflow: hidden auto;
+  max-height: 50vh;
   width: 80%;
   margin: 0 auto;
-  overflow: hidden auto;
-  max-height: 65vh;
 }
 
 .Posts::-webkit-scrollbar{ background: $white; width: 10px; }

@@ -1,11 +1,11 @@
 import React from 'react'
 import Post from './Post'
-import './PostsArea.scss'
+import './Posts.scss'
 
-const PostsArea = ({
+const Posts = ({
   posts
 }) =>
-  <ul className="PostsArea">
+  <ul className="Posts">
     {
       posts.map(post =>
         <Post
@@ -18,4 +18,4 @@ const PostsArea = ({
     }
   </ul>
 
-export default PostsArea
+export default Posts

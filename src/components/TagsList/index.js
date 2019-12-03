@@ -2,7 +2,7 @@ import React from 'react'
 import Tag from './Tag'
 import { HashRouter } from 'react-router-dom'
 
-const TagsArea = ({
+const TagsList = ({
   tags
 }) =>
   <HashRouter basename="/tag">
@@ -13,4 +13,4 @@ const TagsArea = ({
     }
   </HashRouter>
 
-export default TagsArea
+export default TagsList

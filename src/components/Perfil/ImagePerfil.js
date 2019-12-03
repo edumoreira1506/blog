@@ -1,11 +1,11 @@
 import React from 'react'
-import './ImageArea.scss'
+import './ImagePerfil.scss'
 
-const ImageArea = () =>
+const ImagePerfil = () =>
   <img
-    className="ImageArea"
+    className="ImagePerfil"
     src="https://i1.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/Pong.png?w=730&ssl=1"
     alt="Eduardo Moreira"
   />
 
-export default ImageArea
+export default ImagePerfil

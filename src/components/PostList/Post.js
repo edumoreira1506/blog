@@ -10,14 +10,14 @@ const Post = ({
 }) =>
   <HashRouter basename="/post">
     <Link to={date}>
-      <li className="BigPost">
-        <h3 className="BigPost__title">
+      <li className="Post">
+        <h3 className="Post__title">
           { title }
         </h3>
-        <p className="BigPost__content">
+        <p className="Post__content">
           { description }
         </p>
-        <h5 className="BigPost__details">
+        <h5 className="Post__details">
           { date }
           { 
             tags &&
