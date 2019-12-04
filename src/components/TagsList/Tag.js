@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from '../Link'
 
 const Tag = ({
   tag
 }) =>
-  <Link to={tag}>
+  <Link to={`tag/${tag}`}>
     { tag }
   </Link>
 

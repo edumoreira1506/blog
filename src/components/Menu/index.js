@@ -1,10 +1,11 @@
 import React from 'react'
-import { HashRouter, Link } from 'react-router-dom'
+import Link from '../Link'
 
 const Menu = () =>
-  <HashRouter basename="/">
-    <Link to="/">Home</Link>
-    <Link to="/about">Sobre</Link>
-  </HashRouter>
+  <span>
+    <Link to="">Home</Link>
+    <Link to="about">Sobre</Link>
+  </span>
+  
 
 export default Menu
