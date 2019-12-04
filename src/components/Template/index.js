@@ -1,6 +1,6 @@
 import React from 'react'
-import PersonalArea from './PersonalArea'
-import Menu from './Menu'
+import SideBar from '../SideBar'
+import Menu from '../Menu'
 
 import './Template.scss'
 
@@ -9,7 +9,7 @@ const Template = ({
 }) =>
   <div className="Template">
     <div className="Template__personal">
-      <PersonalArea />
+      <SideBar />
     </div>
     <div className="Template__content">
       <div className="Template__menu">

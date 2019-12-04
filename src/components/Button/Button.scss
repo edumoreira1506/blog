@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.Button {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: $grey;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: $black;
+  font-size: 20px;
+  padding: 6px 0 0 0;
+  opacity: 0.6;
+  
+  &:hover{
+    border-radius: $black solid 1px;
+    opacity: 0.9;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--choiced {
+    opacity: 0.9;
+  }
+}

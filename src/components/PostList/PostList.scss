@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.PostList {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden auto;
+  max-height: 65vh;
+}
+
+.PostList::-webkit-scrollbar{ background: $white; width: 10px; }
+.PostList::-webkit-scrollbar-button{ background: $black; }
+.PostList::-webkit-scrollbar-thumb{ background: $black; }
