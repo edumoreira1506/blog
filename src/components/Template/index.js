@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBar from '../SideBar'
 import Menu from '../Menu'
+import Contacts from '../Contacts'
 
 import './Template.scss'
 
@@ -16,6 +17,9 @@ const Template = ({
         <Menu />
       </div>
       { children }
+    </div>
+    <div className="Template__contacts">
+      <Contacts />
     </div>
   </div>
 
