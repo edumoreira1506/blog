@@ -2,3 +2,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+pre {
+  font-family: 'Fira Code', monospace;
+  color: #a698ec;
+  background: rgb(42, 39, 52);
+  padding: 10px 0 10px 20px;
+  border-radius: 10px;
+  overflow: auto hidden;
+}
+
+pre::-webkit-scrollbar{ background: #a698ec; width: 10px; }
+pre::-webkit-scrollbar-button{ background: rgb(42, 39, 52); }
+pre::-webkit-scrollbar-thumb{ background: rgb(42, 39, 52); }
