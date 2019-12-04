@@ -1,10 +1,11 @@
 import React from 'react'
+import { baseUrl } from '../../models/url'
 import './ImagePerfil.scss'
 
 const ImagePerfil = () =>
   <img
     className="ImagePerfil"
-    src="https://i1.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/Pong.png?w=730&ssl=1"
+    src={`${baseUrl()}eduardo.jpg`}
     alt="Eduardo Moreira"
   />
 
