@@ -3,6 +3,7 @@ import Perfil from '../Perfil'
 import CategoriesList from '../CategoriesList'
 import Button from '../Button'
 import TitleSite from '../TitleSite'
+import Contacts from '../Contacts'
 import { FaUserAlt } from 'react-icons/fa'
 import { IoIosGlobe } from 'react-icons/io'
 
@@ -37,6 +38,7 @@ const SideBar = () => {
       <div className="SideBar__title">
         <TitleSite />
       </div>
+      <Contacts />
       { areas[openedArea] }
     </div>
   )

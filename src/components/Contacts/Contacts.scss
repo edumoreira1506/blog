@@ -1,0 +1,31 @@
+@import "../variables.scss";
+
+.Contacts {
+  position: absolute;
+  bottom: 10px;
+  left: 34%;
+
+  &__link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: $white !important;
+    background: $black;
+    opacity: 0.5;
+    border-radius: 100%;
+    margin: 0 5px 0 5px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
