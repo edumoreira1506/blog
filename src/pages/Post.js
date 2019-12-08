@@ -16,7 +16,7 @@ const Post = ({ match }) => {
           { post.title }
         </h2>
         <h3 className="Article__description">
-          { post.description }
+          { post.description } - { post.text }
         </h3>
         {
           post.images.length ?

@@ -1,4 +1,5 @@
 import posts from '../posts.json'
+import readingTime from 'reading-time'
 
 export const getAll = () =>
   getYears(posts).map(year =>
@@ -16,7 +17,8 @@ export const search = keyWord =>
 
 export const getPost = ({ params }) => ({
   ...posts[params.year][params.month][params.day],
-  date: `${params.day}/${params.month}/${params.year}`
+  date: `${params.day}/${params.month}/${params.year}`,
+  ...readingTime(posts[params.year][params.month][params.day]['content'])
 })
 
 export const getByTag = tag =>
