@@ -11,6 +11,7 @@ export const getAll = () =>
       ).flat()
     ).flat()
   ).flat()
+  .reverse()
 
 export const search = keyWord =>
   getAll().filter(post => post.description.includes(keyWord) || post.title.includes(keyWord))
